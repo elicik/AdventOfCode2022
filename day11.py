@@ -45,8 +45,17 @@ class monkey:
         self.false_location = false_location
         self.inspected = 0
     def do_operation(self, old):
-        operation = re.match("new = (.+)", self.operation_str)[1]
-        return eval(operation)
+        # operation = re.match("new = (.+)", self.operation_str)[1]
+        # return eval(operation)
+        if "+" in self.operation_str:
+            operand = self.operation_str.split("+")[1].strip()
+            return old + int(operand)
+        elif "*" in self.operation_str:
+            operand = self.operation_str.split("*")[1].strip()
+            if operand == "old":
+                return old * old
+            else:
+                return old * int(operand)
     def do_test(self, worry):
         return worry % self.divisible_by == 0
 
