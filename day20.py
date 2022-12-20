@@ -67,12 +67,10 @@ for m in range(mix):
         old_next.prev = old_prev
 
         new_prev = line.prev
-        if line.num > 0:
-            for i in range((decryption_key * line.num) % (length-1)):
-                new_prev = new_prev.next
-        else:
-            for i in range((-decryption_key * line.num) % (length-1)):
-                new_prev = new_prev.prev
+
+        for i in range((decryption_key * line.num) % (length-1)):
+            new_prev = new_prev.next
+
         new_next = new_prev.next
 
         new_prev.next = line
