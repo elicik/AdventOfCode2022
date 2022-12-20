@@ -1,11 +1,6 @@
 import re
-import numpy as np
 import math
-import bisect
 import functools
-import time
-import itertools
-import copy
 
 lines = []
 with open("day19.txt") as input_file:
