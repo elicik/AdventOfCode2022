@@ -1,15 +1,6 @@
-# DAY 16 PART 2 NOT COMPLETED
-
 import re
-import numpy as np
 import math
-import bisect
 import functools
-import time
-import itertools
-import threading
-import collections
-import pprint
 
 lines = []
 with open("day16.txt") as input_file:

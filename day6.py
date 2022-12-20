@@ -1,5 +1,3 @@
-import re
-
 lines = []
 with open("day6.txt") as input_file:
     lines = input_file.read().rstrip().split("\n")

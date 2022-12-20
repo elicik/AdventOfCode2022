@@ -1,9 +1,3 @@
-import re
-import numpy as np
-import math
-import bisect
-import functools
-
 lines = []
 with open("day14.txt") as input_file:
     lines = input_file.read().rstrip().split("\n")

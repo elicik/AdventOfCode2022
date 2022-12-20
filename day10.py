@@ -1,7 +1,3 @@
-import re
-import numpy as np
-import math
-
 lines = []
 with open("day10.txt") as input_file:
     lines = input_file.read().rstrip().split("\n")

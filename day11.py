@@ -1,6 +1,4 @@
 import re
-import numpy as np
-import math
 
 lines = []
 with open("day11.txt") as input_file:
