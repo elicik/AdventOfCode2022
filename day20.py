@@ -1,14 +1,3 @@
-import re
-import numpy as np
-import math
-import bisect
-import functools
-import time
-import itertools
-import copy
-import collections
-
-
 lines = []
 with open("day20.txt") as input_file:
     lines = input_file.read().rstrip().split("\n")
