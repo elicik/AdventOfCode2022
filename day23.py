@@ -1,13 +1,4 @@
-import re
 import numpy as np
-import math
-import bisect
-import functools
-import time
-import itertools
-import copy
-import collections
-
 
 lines = []
 with open("day23.txt") as input_file:
@@ -49,7 +40,6 @@ directions = ["north", "south", "west", "east"]
 
 for r in range(rounds):
     proposed_moves = {}
-    new_ground = np.copy(ground)
     for elf in elves:
         # Do nothing for elves with no neighbors
         north = ground[elf[0]-1,elf[1]-1:elf[1]+2]
